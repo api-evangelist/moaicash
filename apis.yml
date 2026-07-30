@@ -1,7 +1,30 @@
 aid: moaicash
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/moaicash.png
 name: Moai.cash
-description: Moai.cash is a company surfaced as a portfolio company of point-nine and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Moai.cash is a Telegram-native cryptocurrency super app operated by Sloika
+  Industries, Inc. that bundles digital-wallet, payments, and Web3 financial
+  services into a familiar messaging interface. It advertises zero-fee
+  transactions, support for 1,000+ tokens, multi-chain deposits, token swapping,
+  peer-to-peer money transfers, prediction markets for real-world events, and an
+  on-chain lottery (Megapot). The company promotes an embedded-apps "API" that
+  lets third-party applications run inside the Moai experience (payment
+  processing, wallet management, token operations, lending/borrowing, real-world
+  assets, Web3 gaming, and tokenized stocks), but that API is gated behind an
+  email access request with no public documentation, OpenAPI specification, base
+  URL, or self-service developer portal at this time. Surfaced as a portfolio
+  company of Point Nine and tracked in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/moaicash/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Cryptocurrency
+- Payments
+- Digital Wallet
+- Web3
+- Blockchain
+- Fintech
+- Prediction Markets
+- Telegram
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +54,26 @@ maintainers:
 common:
 - type: Website
   url: https://www.moai.cash
+- type: TermsOfService
+  url: https://www.moai.cash/terms
+- type: PrivacyPolicy
+  url: https://www.moai.cash/privacy
+- type: GitHubOrganization
+  url: https://github.com/sloikaxyz
+- type: SignUp
+  url: https://t.me/moaicash_bot
+- type: Support
+  url: https://t.me/moaicash_chat
+- type: X
+  url: https://x.com/moaicash
+- type: LinkedIn
+  url: https://www.linkedin.com/company/moaicash/
+- type: DomainSecurity
+  url: security/moaicash-domain-security.yml
+- type: WellKnown
+  url: well-known/moaicash-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
