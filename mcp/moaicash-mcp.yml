@@ -1,0 +1,31 @@
+generated: '2026-09-11'
+method: probed
+source: https://moai.cash/mcp
+status: published
+server:
+  name: moaicash
+  transport: http
+  url: https://moai.cash/mcp
+deployment:
+  mode: remote
+  endpoint: https://moai.cash/mcp
+  verified: probed
+  probe: live
+  checked: '2026-09-11'
+  source: docs-check 2026-09-12 (endpoint found in the provider's own documentation, then probed)
+tools_count: 6
+tools:
+- name: get_token_price
+  description: ''
+- name: get_all_token_prices
+  description: ''
+- name: get_token_chart
+  description: ''
+- name: get_token_news
+  description: ''
+- name: get_fiat_rate
+  description: ''
+- name: convert_currency
+  description: ''
+tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
+authorship: provider
