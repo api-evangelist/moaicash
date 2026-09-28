@@ -16,16 +16,25 @@ deployment:
 tools_count: 6
 tools:
 - name: get_token_price
-  description: ''
+  description: Current prices for one or more cryptocurrencies by CoinGecko coin id, with 24h change,
+    market cap, and volume in each requested fiat currency. Cached ~60s. No authentication required.
 - name: get_all_token_prices
-  description: ''
+  description: Prices (with 24h change) for every cryptocurrency Moai tracks, in a single request. Useful
+    for populating price tickers. Cached ~60s. No authentication required.
 - name: get_token_chart
-  description: ''
+  description: Historical market chart (prices, market caps, volumes) for a cryptocurrency by CoinGecko
+    coin id. Cached ~10 minutes. No authentication required.
 - name: get_token_news
-  description: ''
+  description: 'Latest news headlines (up to 5) for a cryptocurrency by symbol. Cached ~1 hour. If no
+    news provider is configured, returns { news: [], configured: false }. No authentication required.'
 - name: get_fiat_rate
-  description: ''
+  description: 'Current exchange rate between two fiat currencies (and optional daily history). Source:
+    ECB via Frankfurter. Current rate cached 1h; history cached 6h. No authentication required.'
 - name: convert_currency
-  description: ''
+  description: Convert an amount of one fiat currency to another at the live ECB exchange rate, and return
+    a link to the matching Moai.cash conversion page (with a calculator and 30-day rate chart). Use this
+    when a user wants to convert between fiat curre
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
